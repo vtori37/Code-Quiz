@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // What does "===" operator mean in Javascript?
 
 // <input class="form-check-input" type="checkbox" value="yes">
@@ -25,3 +26,12 @@
 // set it to a variable
 // questions
 // array of objects 
+=======
+// Question what does "===" mean in javascript?
+// incremental operand
+// equality operator
+// equality coercion 
+
+// have variables to questions
+// have an array of objects (which are the answers)
+>>>>>>> 8036d948b5ac10891160faee0ea5b361a1cbff1d

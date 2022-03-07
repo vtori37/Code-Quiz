@@ -11,7 +11,7 @@ This application is a quiz that tests the user on fundamental concepts of JavaSc
 
 ## Table of Contents 
 * [Website](#website)
-* [Contributors](#contributors)
+<!-- * [Contributors](#contributors) -->
 * [Credits](#credits)
 
 ## Website

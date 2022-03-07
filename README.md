@@ -24,7 +24,17 @@ The following individuals helped assit me in building this code:
 * HTML5
 * CSS 
 * JS
+* Bootstrap 5.0
 --- 
+
+
+
+
+
+
+
+
+
 
 
 <!--

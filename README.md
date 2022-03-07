@@ -11,7 +11,7 @@
 
 ## Website
 Here is a link to the live website:
-[Password Generator](https://vtori37.github.io/Code-Quiz/)
+[Fundamentals of JS Quiz](https://vtori37.github.io/Code-Quiz/)
 
 
 ## Author

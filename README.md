@@ -22,9 +22,9 @@ Here is a link to the live website:
 ## Author
 [Victoria Rice](https://github.com/vtori37)
 
-## Contributors
+<!-- ## Contributors
 The following individuals helped assit me in building this code:
-
+ -->
 ## Credits
 * HTML5
 * CSS 

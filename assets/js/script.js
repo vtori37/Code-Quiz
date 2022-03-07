@@ -7,6 +7,9 @@ var timer = 90;
 //Time deduction for incorrect answers
 var deductions = 10;
 
+var info
+
+
 
 //Question Bank
 const questionBank= [
@@ -43,18 +46,21 @@ const questionBank= [
     answer: 2
   },
 ];
-console.log("");
+
+
+
+
+
+submit.style.display = "none";
 
 questionText.innerHTML = "";
-
-// start.style.display = "none";
 var startBtn = document.getElementById("start");
 
 function getQuestions(questionNumber) {
   var questionText = document.querySelector("questionText");
   // var answerChoicesText = document.querySelector("choicesText");
-   questionText.textContent = questionNumber.questionText; 
-  questionText.innerHTML = "";
+    questionText.textContent = questionNumber.questionText; 
+    questionText.innerHTML = "";
 
 }
 

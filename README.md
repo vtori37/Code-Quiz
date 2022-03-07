@@ -2,7 +2,7 @@
 
 ## Description 
 
-This application is a quiz that tests the user on fundamental concepts of JavaScript. Upon its completion, the user will be assessed on basic concepts and will have 90 seconds to answer four questions. For every question that they answer incorrectly, the user will have 10 seconds deducted from their timer. 
+This application is a quiz that tests the user on fundamental concepts of JavaScript. Upon this project's completion, the user will be assessed on basic concepts and will have 90 seconds to answer four questions. For every question that they answer incorrectly, the user will have 10 seconds deducted from their timer. When the user completes the quiz, they can submit their name and score to the scoreboard of the quiz. 
 
 🚧 This application is currently a work-in-progress.🚧
 

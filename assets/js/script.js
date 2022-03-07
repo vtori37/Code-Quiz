@@ -7,6 +7,7 @@ var timer = 90;
 //Time deduction for incorrect answers
 var deductions = 10;
 
+
 //Question Bank
 const questionBank= [
   { num: 1,
@@ -44,41 +45,62 @@ const questionBank= [
 ];
 console.log("");
 
+questionText.innerHTML = "";
 
 // start.style.display = "none";
 var startBtn = document.getElementById("start");
 
 function getQuestions(questionNumber) {
-  for (var i=0; i< questionBank.length; i++) {
-    var answeredQuestion = questionBank[questionNumber].question;
+  var questionText = document.querySelector("questionText");
+  // var answerChoicesText = document.querySelector("choicesText");
+   questionText.textContent = questionNumber.questionText; 
+  questionText.innerHTML = "";
 
-    var userResponse = questionBank[questionNumber].answerChoices;
-    questionText.textContent = answeredQuestion;
-  }
 }
 
+getQuestions(questionBank);
 
 
-  var showQuestion = document.getElementsByName("question");
-  //   showQuestion.textContent = index.question;
-  //   console.log("please work hhaha");
-  // }
-  
-  // getQuestions(question, 1);
-  // console.log("yikes");
-  
-  
-  // function questions (){}
-  
-  
-  
-  
-  
-// //Function for Starting Quiz
-// startBtn.onclick = FUNCTION
-// const info = document.querySelector(".info");
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function() {
+  console.log("clicked heheh");
+});
 
-//   f
+
+
+    // answerChoicesText.innerHTML=answerChoices;
+//     for (var i=0; i< questionBank.length; i++) {
+//       var answeredQuestion = questionBank[questionNumber].question;
+  
+//       var userResponse = questionBank[questionNumber].answerChoices;
+      
+//       // questionText.textContent = answeredQuestion;
+
+//   }
+// }
+
+
+// var initialInput = document.querySelector("");
+//   var showQuestion = document.getElementsByName("question");
+//   //   showQuestion.textContent = index.question;
+//   //   console.log("please work hhaha");
+//   // }
+  
+//   // getQuestions(question, 1);
+//   // console.log("yikes");
+  
+  
+//   // function questions (){}
+  
+  
+  
+  
+  
+// // //Function for Starting Quiz
+// // startBtn.onclick = FUNCTION
+// // const info = document.querySelector(".info");
+
+// //   f
   
 
 
@@ -94,15 +116,15 @@ function getQuestions(questionNumber) {
 
 
 
-// // Button to progress to next question
-// var nextBtn = document.getElementById("btn");
+// // // Button to progress to next question
+// // var nextBtn = document.getElementById("btn");
 
-// nextBtn.onlick = FUNCTION
+// // nextBtn.onlick = FUNCTION
 
 
 
-// //Button to Submit the quiz
-// var submitBtn = document.getElementById("submit");
+// // //Button to Submit the quiz
+// // var submitBtn = document.getElementById("submit");
 
-// submitBtn.onlick = FUNCTION
+// // submitBtn.onlick = FUNCTION
 

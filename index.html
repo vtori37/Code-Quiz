@@ -15,36 +15,49 @@
     <section class="vw-100 row justify-content-center">
         <div class="col-10 col-md-6 col-lg-5">
             <h1 class="vw-40 display-4 text-center text-white">Fundamentals of JavaScript Quiz!</h1>
-            <a href="https://www.freepnglogos.com/pics/javascript" title="Image from freepnglogos.com"><img
-                    src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
-                    width="200" alt="javascript logo transparent logo javascript images" /></a>
+            <!-- <a href="https://www.freepnglogos.com/pics/javascript" title="Image from freepnglogos.com"><img
+                    src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" 
+                    width="200" alt="javascript logo transparent logo javascript images" /></a>-->
 
             <!--Quiz container and Quiz Questions-->
             <form class="p-3 mb-2 bg-white text-dark rounded">
                 <div>
-                    <p>The timer for the quiz will start when you click the "Start Quiz" button.</p>
+                    <!--Quiz Rules-->
+                    <div class="info">
+                        <p class="h4 text-center">This quiz will test your knownledge of JavaScript Fundamental
+                            concepts.
+                        <p>1. You will have 90 seconds to answer four questions.</p>
+                        <p>2. For every question that you answer incorrectly, 10 seconds will be deducted from your
+                            timer.</p>
+                        <p>3. Try to aim for the highest score.</p>
+                        <p>The timer for the quiz will start when you click the "Start Quiz" button. Good Luck!</p>
+                        </p>
+                    </div>
+
+                    <!-- Quiz Starter-->
                     <button type="button" class="btn btn-block btn-outline-primary d-grid gap 2 col-6 mx-auto"
                         id="start">
                         Start!
                     </button>
 
-                    <div class="quiz">
-                        <div id="question"></div>
-                        <input type="radio" idname="answerChoices" /></br>
-                        <input type="radio" name="answerChoices" /></br>
-                        <input type="radio" name="answerChoices" /></br>
-
-                        <button type="button" class="btn btn-outline-warning">Next</button>
+                    <!--Question-->
+                    <div id="questionText">
+                        <!-- Answer Choice -->
+                        <div class="quiz">
+                            <button id="ans1" name="answerChoices"></button></br>
+                            <button id="ans2" name="answerChoices"></button></br>
+                            <button id="ans3" name="answerChoices"></button></br>
+                        </div>
                     </div>
 
-
+                    <!-- <button id="btn" type="button" class="btn btn-outline-warning">Next</button> -->
 
 
 
                 </div>
 
 
-                <submit class="btn btn-block btn-success d-grid gap 2 col-6 mx-auto">
+                <submit id="submit" class="btn btn-block btn-success d-grid gap 2 col-6 mx-auto">
                     Finish Quiz!</submit>
             </form>
         </div>

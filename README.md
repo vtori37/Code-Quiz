@@ -1,7 +1,7 @@
 # Code-Quiz
 
 ## Description 
-![alt text](./assets/Images/.png)
+![alt text](./assets/Images/Code-quiz-screenshot.png)
 
 
 ## Table of Contents 

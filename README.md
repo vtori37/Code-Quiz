@@ -1,6 +1,11 @@
 # Code-Quiz
 
 ## Description 
+
+This application is a quiz that tests the user on fundamental concepts of JavaScript. Upon its completion, the user will be assessed on basic concepts and will have 90 seconds to answer four questions. For every question that they answer incorrectly, the user will have 10 seconds deducted from their timer. 
+
+🚧 This application is currently a work-in-progress.🚧
+
 ![alt text](./assets/Images/Code-quiz-screenshot.png)
 
 

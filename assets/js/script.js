@@ -74,6 +74,9 @@ btn.addEventListener("click", function() {
 
 
 
+
+
+
     // answerChoicesText.innerHTML=answerChoices;
 //     for (var i=0; i< questionBank.length; i++) {
 //       var answeredQuestion = questionBank[questionNumber].question;
@@ -105,12 +108,6 @@ btn.addEventListener("click", function() {
 // // //Function for Starting Quiz
 // // startBtn.onclick = FUNCTION
 // // const info = document.querySelector(".info");
-
-// //   f
-  
-
-
-      
   
 
     

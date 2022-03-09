@@ -9,7 +9,7 @@ var deductions = 10;
 
 var info
 
-
+var answerchoices = 
 
 //Question Bank
 const questionBank= [
@@ -78,12 +78,14 @@ btn.addEventListener("click", function() {
 
 
     // answerChoicesText.innerHTML=answerChoices;
-//     for (var i=0; i< questionBank.length; i++) {
-//       var answeredQuestion = questionBank[questionNumber].question;
+    for (var i=0; i< questionBank.length; i++) {
+      var answeredQuestion = questionBank[questionNumber].question;
   
-//       var userResponse = questionBank[questionNumber].answerChoices;
+      var userResponse = questionBank[questionNumber].answerChoices;
+
+    
       
-//       // questionText.textContent = answeredQuestion;
+      // questionText.textContent = answeredQuestion;
 
 //   }
 // }
@@ -130,4 +132,3 @@ btn.addEventListener("click", function() {
 // // var submitBtn = document.getElementById("submit");
 
 // // submitBtn.onlick = FUNCTION
-

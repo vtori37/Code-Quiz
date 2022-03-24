@@ -7,19 +7,20 @@ var timer = 90;
 //Time deduction for incorrect answers
 var deductions = 10;
 
-var info
+// var info
 
-var answerchoices = 
+// var answerchoices = 
 
 //Question Bank
-const questionBank= [
+
+var questionBank = [
   { num: 1,
     question: "1. Which of the following is the AND operator?",
     answerChoices: [
       "a. ===", 
       "b. ||", 
       "c. &&"],
-    answer: 2
+    answer: "c. &&"  //
   },
   { num: 2,
     question: "2. Which of the following contains a string?",
@@ -27,7 +28,7 @@ const questionBank= [
       "a. let videogame = 'Please play Breat of the Wild.';", 
       "b. const costs = 2;", 
       "c. var animalTypes = [bear, wolf, elephant, giraffe]"],
-    answer: 0
+    answer: "a. let videogame = 'Please play Breat of the Wild.';"
   }, 
   { num: 3,
     question: "3. What does JSON stand for?",
@@ -35,7 +36,7 @@ const questionBank= [
       "a. JavaScript Operator Numerator", 
       "b. JavaScript Object Notation", 
       "c. JavaScript Object Naming"],
-    answer: 1
+    answer:  "b. JavaScript Object Notation", 
   },
   { num: 4,
     question: "4. Which of the following is NOT using proper Javascript syntax for commenting",
@@ -43,58 +44,69 @@ const questionBank= [
       "a. /* This is a comment. **/", 
       "b. // This is a actually a comment.", 
       "c. <!-- This is also a comment. -->"],
-    answer: 2
+    answer: "c. <!-- This is also a comment. -->"
   },
 ];
 
-
-
-
-
-submit.style.display = "none";
-
-questionText.innerHTML = "";
-var startBtn = document.getElementById("start");
+console.log(questionBank);
 
 function getQuestions(questionNumber) {
-  var questionText = document.querySelector("questionText");
-  // var answerChoicesText = document.querySelector("choicesText");
-    questionText.textContent = questionNumber.questionText; 
-    questionText.innerHTML = "";
+    var questionText = document.getElementById("questionText");
+   questionBank.forEach(getQuestions);
+   var questions = document.getElementById("questionText").textContent; 
+  //  use class="hide"
 
-}
-
-getQuestions(questionBank);
-
-
-var btn = document.getElementById("btn");
-btn.addEventListener("click", function() {
-  console.log("clicked heheh");
-});
+  //  document.getElementById("questionText")
+    // var answerChoicesText = document.querySelector("choicesText");
+     
+      // questionText.innerHTML = "";
+   }
 
 
+   array.forEach(currentValue, idex, arr), thisValue);
 
 
+// // submit.style.display = "none";
 
+// questionText.innerHTML = "";
+// var startBtn = document.getElementById("start");
 
-    // answerChoicesText.innerHTML=answerChoices;
-    for (var i=0; i< questionBank.length; i++) {
-      var answeredQuestion = questionBank[questionNumber].question;
-  
-      var userResponse = questionBank[questionNumber].answerChoices;
-
-    
-      
-      // questionText.textContent = answeredQuestion;
-
-//   }
+// function getQuestions(questionNumber) {
+//   var questionText = document.getElementById("questionText");
+//   // var answerChoicesText = document.querySelector("choicesText");
+//     questionText.textContent = questionNumber.questionText; 
+//     questionText.innerHTML = "";
 // }
+
+// getQuestions(questionBank);
+
+
+// var btn = document.getElementById("btn");
+// btn.addEventListener("click", function() {
+//   console.log("clicked heheh");
+// });
+
+
+
+
+
+
+//     // answerChoicesText.innerHTML=answerChoices;
+//     for (var i=0; i< questionBank.length; i++) {
+//       var answeredQuestion = questionBank[questionNumber].question;
+  
+//       var userResponse = questionBank[questionNumber].answerChoices;
+//     }
+    
+//       questionText.textContent = answeredQuestion;
+
+  
 
 
 // var initialInput = document.querySelector("");
 //   var showQuestion = document.getElementsByName("question");
 //   //   showQuestion.textContent = index.question;
-//   //   console.log("please work hhaha");
+//   //   console.log("");
 //   // }
   
 //   // getQuestions(question, 1);

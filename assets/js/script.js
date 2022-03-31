@@ -7,12 +7,26 @@ var timer = 90;
 //Time deduction for incorrect answers
 var deductions = 10;
 
-// var info
+var currentTime = document.getElementById("timer");
 
-// var answerchoices = 
+var startBtn = document.getElementById("startBtn");
+
+var questionContainer = document.getElementById("questionContainer");
+
+var quizQuestion = document.getElementById("quizQuestion");
+
+var answerChoices = document.getElementById("answerChoices");
+
+var scoreboard = document.getElementById("scoreboard");
+
+var userName = document.getElementById("userName");
+
+var submitQuiz = document.getElementById("submitQuiz");
+
+
+
 
 //Question Bank
-
 var questionBank = [
   { num: 1,
     question: "1. Which of the following is the AND operator?",
@@ -50,6 +64,23 @@ var questionBank = [
 
 console.log(questionBank);
 
+function startQuiz () {
+  var startScreen = document.getElementById("info");
+  startScreen.setAttribute("class", "hide");
+
+  questionContainer.removeAttribute("class");
+
+  // start timer
+  // add event listener to startbtn
+
+  getQuestions();
+}
+
+
+
+
+
+
 function getQuestions(questionNumber) {
     var questionText = document.getElementById("questionText");
    questionBank.forEach(getQuestions);
@@ -63,7 +94,7 @@ function getQuestions(questionNumber) {
    }
 
 
-   array.forEach(currentValue, idex, arr), thisValue);
+   array.forEach(currentValue, index, arr, thisValue);
 
 
 // // submit.style.display = "none";

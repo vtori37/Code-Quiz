@@ -22,11 +22,11 @@
                     width="200" alt="javascript logo transparent logo javascript images" /></a>-->
 
 
-
+            <section id="timer"></section>
             <!--Quiz container and Quiz Questions-->
-            <form class="p-3 mb-2 bg-white text-dark rounded">
+            <section class="p-3 mb-2 bg-white text-dark rounded">
                 <!--Quiz Rules-->
-                <div class="info">
+                <div id="info">
                     <p class="h4 text-center">This quiz will test your knowledge of JavaScript Fundamental
                         concepts.
                     <p>1. You will have 90 seconds to answer four questions.</p>
@@ -35,34 +35,32 @@
                     <p>3. Try to aim for the highest score.</p>
                     <p>The timer for the quiz will start when you click the "Start Quiz!" button. Good Luck!</p>
                     </p>
+
                     <!-- 
                     //put an event listern on btton 42, every answerChoices -->
 
                     <!-- Quiz Starter-->
                     <button type="button" class="btn btn-block btn-outline-primary d-grid gap 2 col-6 mx-auto"
-                        id="start">
+                        id="startBtn">
                         Start Quiz!
                     </button>
 
                 </div>
+            </section>
+
+            <!--Question-->
+            <div id="questionContainer" class="hide">
+                <div id="quizQuestion"></div>
+                <div id="answerChoices" class="choices"></div>
+            </div>
+
+            <!-- <button id="btn" type="button" class="btn btn-outline-warning">Next</button> -->
 
 
-                <div id="question" class="hide">
-                    <!--Question-->
-                    <div id="questionText"></div>
-                    <!-- Answer Choice -->
-                    <!-- <div class="quiz"> -->
-                    <div id="choices" class="choices"></div>
-                    <!-- </div> -->
-                </div>
-
-                <!-- <button id="btn" type="button" class="btn btn-outline-warning">Next</button> -->
-
-
-                <div class="scoreboard hide" </div>
-
-            </form>
-        </div>
+            <div id="scoreboard" class="scoreboard hide"></div>
+            <input type="text" id="userName" />
+            <button type="submit" id="submitQuiz" class="btn btn-block btn-outline-primary d-grid gap 2 col-6
+                mx-auto">Submit Quiz!</button>
     </section>
 
     <script src="./assets/js/script.js"></script>

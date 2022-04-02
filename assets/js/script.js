@@ -1,7 +1,7 @@
 // User Score
 var score = 0;
-// The index of the current question
-var questionNumber = 0;
+// The given number of the current question
+var questionIndex = 0;
 //Time left
 var timer = 90;
 //Time deduction for incorrect answers
@@ -15,7 +15,7 @@ var questionContainer = document.getElementById("questionContainer");
 
 var quizQuestion = document.getElementById("quizQuestion");
 
-var answerChoices = document.getElementById("answerChoices");
+var answerChoicesEl = document.getElementById("answerChoices");
 
 var scoreboard = document.getElementById("scoreboard");
 
@@ -28,7 +28,7 @@ var submitQuiz = document.getElementById("submitQuiz");
 
 //Question Bank
 var questionBank = [
-  { num: 1,
+  { num: 0,
     question: "1. Which of the following is the AND operator?",
     answerChoices: [
       "a. ===", 
@@ -36,7 +36,7 @@ var questionBank = [
       "c. &&"],
     answer: "c. &&"  //
   },
-  { num: 2,
+  { num: 1,
     question: "2. Which of the following contains a string?",
     answerChoices: [
       "a. let videogame = 'Please play Breat of the Wild.';", 
@@ -44,7 +44,7 @@ var questionBank = [
       "c. var animalTypes = [bear, wolf, elephant, giraffe]"],
     answer: "a. let videogame = 'Please play Breat of the Wild.';"
   }, 
-  { num: 3,
+  { num: 2,
     question: "3. What does JSON stand for?",
     answerChoices: [
       "a. JavaScript Operator Numerator", 
@@ -52,8 +52,8 @@ var questionBank = [
       "c. JavaScript Object Naming"],
     answer:  "b. JavaScript Object Notation", 
   },
-  { num: 4,
-    question: "4. Which of the following is NOT using proper Javascript syntax for commenting",
+  { num: 3,
+    question: "4. Which of the following is NOT using proper Javascript syntax for commenting?",
     answerChoices: [
       "a. /* This is a comment. **/", 
       "b. // This is a actually a comment.", 
@@ -71,30 +71,71 @@ function startQuiz () {
   questionContainer.removeAttribute("class");
 
   // start timer
-  // add event listener to startbtn
+  //add event listener to startbtn
 
   getQuestions();
 }
 
+startBtn.addEventListener("click", startQuiz);
 
 
 
 
+function getQuestions() {
+var currentQuestion = questionBank[questionIndex];
+console.log(currentQuestion);
+ quizQuestion.textContent = currentQuestion.question;
+ 
+ answerChoicesEl.innerHTML = "";
+ 
+ currentQuestion.answerChoices.forEach(choice => {
+   var choiceBtn = document.createElement("button");
+   choiceBtn.textContent = choice;
+   choiceBtn.addEventListener("click", clickedChoice);
+   answerChoicesEl.appendChild(choiceBtn);
+   
+   // clear out answer choices after clicked
+  })
+  
 
-function getQuestions(questionNumber) {
-    var questionText = document.getElementById("questionText");
-   questionBank.forEach(getQuestions);
-   var questions = document.getElementById("questionText").textContent; 
-  //  use class="hide"
+function clickedChoice() {
+  var answer = questionBank[questionIndex].answer;
 
+  if (this.innerText === answer) {
+    console.log("correct");
+  } else {
+    console.log("incorrect");
+  }
+
+  questionIndex++;
+
+  if (questionIndex !== questionBank.length) {
+    getQuestions();
+  } else {
+    endQuiz();
+  }
+  // if statement to see if youre at the end, if not get questions if not then go to function quiz end
+}
+
+function endQuiz () {
+  console.log("end of quiz ");
+}
+
+  // var questions = document.getElementById("questionText").textContent; 
+  // var questionText = document.getElementById("quizQuestion");
+  
+};
   //  document.getElementById("questionText")
     // var answerChoicesText = document.querySelector("choicesText");
      
       // questionText.innerHTML = "";
-   }
 
 
-   array.forEach(currentValue, index, arr, thisValue);
+  //  array.forEach(currentValue, index, arr, thisValue);
+
+
+
+
 
 
 // // submit.style.display = "none";
